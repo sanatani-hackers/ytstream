@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ytstream"
+version = "0.1.0"
+description = "Fast YouTube audio stream resolver and downloader using InnerTube clients (stdlib only)."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["youtube", "innertube", "stream", "audio", "downloader"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio",
+]
+
+[project.optional-dependencies]
+ytdlp = ["yt-dlp"]
+
+[project.scripts]
+ytstream = "ytstream.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

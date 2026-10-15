@@ -11,7 +11,7 @@ Handy for music bots and players that just need a playable URL.
 ## Install
 
 ```bash
-pip install git+https://github.com/<you>/ytstream.git
+pip install git+https://github.com/sanatani-hackers/ytstream.git
 # optional: let it fall back to yt-dlp when every client fails
 pip install "yt-dlp"
 ```
